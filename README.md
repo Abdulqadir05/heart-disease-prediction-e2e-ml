@@ -118,9 +118,7 @@ Contains the full pipeline:
 
 ---
 
-## 🌐 Streamlit Web App
+### 🌐 Live Streamlit App
 
-### Run Locally:
+[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://heart-disease-prediction-e2e-ml-nnwxc55mgbbti5kygvg4f5.streamlit.app/)
 
-```bash
-streamlit run streamlit_app.py
