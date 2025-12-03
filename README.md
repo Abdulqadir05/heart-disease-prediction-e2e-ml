@@ -115,8 +115,50 @@ Contains the full pipeline:
 - Scaler  
 - Final Gradient Boosting Model  
 
+---
+
+## 🛠️ Tech Stack
+
+**Languages & Libraries**
+- 🐍 **Python 3.10**
+- 📘 **Pandas**
+- 📊 **NumPy**
+- 🤖 **Scikit-Learn**
+- 🔧 **Joblib**
+
+**Modeling & Optimization**
+- 🌲 Gradient Boosting Classifier  
+- 🎯 Optuna (Hyperparameter Tuning)  
+- ⚙️ ColumnTransformer Pipeline  
+
+**Visualization**
+- 📈 Matplotlib  
+- 📊 Seaborn  
+
+**Deployment**
+- 🌐 Streamlit (Dark-Neon UI)  
+- 📦 Deployed Model: `.pkl` Pipeline  
+
+**Tools**
+- 📝 Jupyter Notebook  
+- 🐙 GitHub (Version Control)  
+- 🧪 Statistical Testing: Chi-square, T-test  
 
 ---
+---
+
+## 👤 Author
+
+**Abdul Qadir**  
+🎓 **Program:** B.S. in Applied AI & Data Science  
+🏫 **Institute:** Indian Institute of Technology Jodhpur  
+📅 **Date:** December 2025  
+📍 India  
+
+🔗 **Connect with me:**  
+- GitHub: https://github.com/Abdulaqadir05  
+- LinkedIn: *Add your link here*  
+-----
 
 ### 🌐 Live Streamlit App
 
