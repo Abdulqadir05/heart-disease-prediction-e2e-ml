@@ -157,7 +157,7 @@ Contains the full pipeline:
 
 🔗 **Connect with me:**  
 - GitHub: https://github.com/Abdulaqadir05  
-- LinkedIn: *Add your link here*  
+- LinkedIn: https://www.linkedin.com/in/abdul-qadir-533827318/edit/forms/project/new/
 -----
 
 ### 🌐 Live Streamlit App
