@@ -95,10 +95,6 @@ Contains:
 This can be directly used in any application.
 
 ---
-Abdul Qadir \
-Program: B.S. Applied AI & Data Science \
-Institute: Indian Institute of Technology Jodhpur \
-Date: December 2025
 
 ## 🌐 Streamlit Web App  
 A modern **Dark-Neon themed UI** has been created for real-time prediction.
@@ -106,6 +102,7 @@ A modern **Dark-Neon themed UI** has been created for real-time prediction.
 ### 🖥 Run Locally:
 ```bash
 streamlit run streamlit_app.py
+
 
 
 
