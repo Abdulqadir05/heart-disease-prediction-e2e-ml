@@ -1,25 +1,28 @@
-# 💓 Heart Disease Prediction — End-to-End Machine Learning Pipeline  
-**An advanced clinical risk prediction system using EDA, preprocessing pipelines, Gradient Boosting, Optuna tuning, and a deployed Streamlit App.**
+# 💓 Heart Disease Prediction — End-to-End Machine Learning Pipeline
+
+An advanced clinical risk prediction system using **EDA**, **statistical tests**, **preprocessing pipelines**, **Gradient Boosting**, **Optuna tuning**, and a deployed **Streamlit App** with a modern dark-neon UI.
 
 ---
 
-## 🚀 Project Overview  
+## 🚀 Project Overview
+
 This project builds a complete **End-to-End Heart Disease Prediction System** using a structured machine learning workflow:
 
 - ✔ Exploratory Data Analysis (EDA)  
 - ✔ Data cleaning & imputation  
-- ✔ Statistical testing (Chi-square, t-test)  
-- ✔ Encoding, scaling & preprocessing with `ColumnTransformer`  
+- ✔ Statistical tests (Chi-square, t-test)  
+- ✔ Encoding, scaling & preprocessing using `ColumnTransformer`  
 - ✔ Gradient Boosting Classifier with **Optuna hyperparameter tuning**  
-- ✔ Evaluation (AUC, Recall, Precision)  
-- ✔ Saving deployable **final pipeline model**  
-- ✔ Modern, dark-neon **Streamlit Web App** for real-time prediction  
+- ✔ Model evaluation (AUC, Recall, Precision)  
+- ✔ Saving deployable **ML pipeline model**  
+- ✔ Dark-neon **Streamlit Web App** for real-time prediction  
 
-This makes it a **production-grade ML project**, ideal for deployment and real-world demonstration.
+This is a **production-grade ML project** ideal for deployment and real-world demonstration.
 
 ---
 
 ## 📊 Dataset Summary  
+
 The dataset contains **918 patient records** with clinical features such as:
 
 - Age  
@@ -30,78 +33,78 @@ The dataset contains **918 patient records** with clinical features such as:
 - Fasting Blood Sugar  
 - Resting ECG  
 - Max Heart Rate  
-- Exercise-Induced Angina  
-- ST Depression (Oldpeak)  
+- Exercise Angina  
+- Oldpeak  
 - ST Slope  
 
-Target: **HeartDisease (0 = No, 1 = Yes)**
+Target variable: **HeartDisease (0 = No, 1 = Yes)**
 
 ---
 
 ## 🔍 Key Insights from EDA  
-Some critical findings:
 
-- **Cholesterol had 172 zero values** → treated using median imputation  
-- **RestingBP contained 1 zero value**  
-- **Gender imbalance** → 79% Male, 21% Female  
-- **ASY chest pain** strongly correlates with disease presence  
-- **Oldpeak** and **MaxHR** are among the strongest numeric predictors  
-- Heatmap reveals important correlations within clinical features  
+- **Cholesterol had 172 zero values** → fixed using median imputation  
+- **RestingBP had 1 zero value**  
+- **Gender imbalance:** 79% Male, 21% Female  
+- **Chest Pain Type (ASY)** strongly indicates disease  
+- **Oldpeak** and **MaxHR** show strongest numerical patterns  
+- **Correlation heatmap** reveals clinical relationships  
 
-Full EDA is available inside:  
-📄 **`/reports/Heart_failure.pdf`**
+Full EDA available in:  
+📄 `reports/Heart_failure.pdf`
 
 ---
 
 ## 🧠 Modeling Approach  
-### 🔧 Preprocessing  
-- One-Hot Encoding for categorical features  
-- RobustScaler for numeric features  
-- Transformation handled entirely inside a `ColumnTransformer`  
-- No data leakage — transformations wrapped fully inside the pipeline  
 
-### 🔥 Model  
+### 🔧 Preprocessing
+- OneHotEncoder for categorical variables  
+- RobustScaler for numerical variables  
+- All transformations wrapped inside a **Pipeline**  
+- No leakage — correct production design  
+
+### 🔥 Final Model
 - **GradientBoostingClassifier**  
 - Tuned using **Optuna**  
-- Cross-validated AUC optimisation  
-- Final AUC: **0.94+**  
-- Final Recall: **~0.91 (can be optimized via threshold tuning)**  
+- Final Performance:  
+  - **AUC:** 0.94+  
+  - **Recall:** ~0.91 (can be boosted via threshold tuning)  
 
 ---
 
-## 🎯 Optuna Tuning  
-Hyperparameters optimized:
+## 🎯 Hyperparameter Tuning (Optuna)
+The following hyperparameters were optimized:
 
-- Number of estimators  
-- Learning rate  
-- Max depth  
-- Subsample ratio  
-- Min samples split & leaf  
-
-Optuna’s trial history & best value are inside the notebook.
+- n_estimators  
+- learning_rate  
+- max_depth  
+- subsample  
+- min_samples_split  
+- min_samples_leaf  
 
 ---
 
-## 🤖 Saved Model  
-The final deployable model pipeline:
+## 🤖 Saved Pipeline Model
 
 📦 `model/heart_disease_model.pkl`  
-Contains:  
+This contains:
+
 - Preprocessor  
 - Encoder  
 - Scaler  
 - Best Gradient Boosting Model  
 
-This can be directly used in any application.
+Ready for deployment.
 
 ---
 
 ## 🌐 Streamlit Web App  
-A modern **Dark-Neon themed UI** has been created for real-time prediction.
 
-### 🖥 Run Locally:
+### Run Locally:
 ```bash
 streamlit run streamlit_app.py
+
+
 
 
 
